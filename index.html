@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html>
-<script>
+  <head>
+    <meta charset="utf-8">
+    <title>yuanzai' world</title>
+    <script>
     window.location.href="http://blog.csdn.net/ouwen123";
-</script>
+    </script>
+  </head>
+  <body>
 
-<body>
-</body>
-
+  </body>
 </html>
+
+    <!-- ---
+　　layout: default
+　　title: 我的Blog
+　　---
+　　<h2>{{ page.title  }}</h2>
+　　<p>最新文章</p>
+　　<ul>
+  　　　　{% for post in site.posts %}
+  　　　　　　<li>{{ post.date | date_to_string  }} <a href="{{ site.baseurl  }}{{ post.url  }}">{{ post.title  }}</a></li>
+  　　　　{% endfor %}
+  　　</ul> -->
